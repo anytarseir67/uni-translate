@@ -40,7 +40,7 @@ default_key = ['𝔞𝔟𝔠𝔡𝔢𝔣𝔤𝔥𝔦𝔧𝔨𝔩𝔪𝔫𝔬𝔭
 '𝖺𝖻𝖼𝖽𝖾𝖿𝗀𝗁𝗂𝗃𝗄𝗅𝗆𝗇𝗈𝗉𝗊𝗋𝗌𝗍𝗎𝗏𝗐𝗑𝗒𝗓𝖺𝖻𝖼𝖽𝖾𝖿𝗀𝗁𝗂𝗃𝗄𝗅𝗆𝗇𝗈𝗉𝗊𝗋𝗌𝗍𝗎𝗏𝗐𝗑𝗒𝗓',
 '𝒂𝒃𝒄𝒅𝒆𝒇𝒈𝒉𝒊𝒋𝒌𝒍𝒎𝒏𝒐𝒑𝒒𝒓𝒔𝒕𝒖𝒗𝒘𝒙𝒚𝒛𝒂𝒃𝒄𝒅𝒆𝒇𝒈𝒉𝒊𝒋𝒌𝒍𝒎𝒏𝒐𝒑𝒒𝒓𝒔𝒕𝒖𝒗𝒘𝒙𝒚𝒛']
 
-default_remove = '【】『』≋░[̲̅]⟦⟧⦑⦒﴾﴿⦏⦎.,<>/?;:"\'{}[]|\\=+-_()*&^%$#@!`~⦚\͆\̺\̽\͓\̾\͛ \͎\҉\̂\̤\̈\̷\̀\̂\̌\̶\̲\̳\̅\̿' #this looks fucking cursed in vscode
+default_remove = '【】『』≋░[̲̅]⟦⟧⦑⦒﴾﴿⦏⦎.,<>/?;:"\'{}[]|\\=+-_()*&^%$#@!`~⦚\͆\̺\̽\͓\̾\͛\͎\҉\̂\̤\̈\̷\̀\̂\̌\̶\̲\̳\̅\̿' #this looks fucking cursed in vscode
 
 class translator:
     __slots__ = ('alph', 'chars', 'table')
@@ -91,13 +91,3 @@ class translator:
                     cleaned_chars += char
                     cleaned_alph += alphabet[i]
         return cleaned_chars, cleaned_alph
-
-def cli() -> None:
-    import os
-    
-    text = input('text to translate?')
-    if os.path.exists(os.path.dirname(text)):
-        with open(text, 'rt', encoding='utf-8') as f:
-            text = f.read()
-    translated = translator().translate(text)
-    print(translated)

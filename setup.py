@@ -13,6 +13,6 @@ setup(name='uni-translate',
     license="GPLv3",
     packages=['uni_translate'],
     entry_points = {
-        'console_scripts': ['uni-translate=uni_translate:cli'],
+        'console_scripts': ['uni-translate=uni_translate.cli:main'],
     }
 )
