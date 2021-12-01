@@ -11,7 +11,7 @@ remove = '!()'
 # define our custom remove, all characters in this 
 # string (can also be a list of strings) will be removed when translating
 
-trans = translator(key=key, remove=remove) # create a translator with our custom key
+trans = translator(key=key, remove=remove) # create a translator with our custom key and remove
 
 print(trans.translate('(!𝕿𝖍𝖎𝖘 𝖎𝖘 𝖆𝖓 𝖊𝖝𝖆𝖒𝖕𝖑𝖊.!)'))
 print(trans.translate('(!𝔗𝔥𝔦𝔰 𝔦𝔰 𝔞𝔫 𝔢𝔵𝔞𝔪𝔭𝔩𝔢 𝔞𝔰 𝔴𝔢𝔩𝔩.!)'))
