@@ -1,8 +1,12 @@
 from uni_translate import translator
-import os
+import os, sys
 
 def main() -> None:
-    text = input('text to translate?')
+    text = None
+    if '-t' in sys.argv:
+        text = ' '.join(sys.argv[sys.argv.index('-t')+1:])
+    if text == None:
+        text = input('text to translate?')
     if os.path.exists(os.path.dirname(text)):
         with open(text, 'rt', encoding='utf-8') as f:
             text = f.read()
