@@ -11,3 +11,5 @@ trans = translator(key=key) # create a translator with our custom key
 
 print(trans.translate('𝕿𝖍𝖎𝖘 𝖎𝖘 𝖆𝖓 𝖊𝖝𝖆𝖒𝖕𝖑𝖊.'))
 print(trans.translate('𝔗𝔥𝔦𝔰 𝔦𝔰 𝔞𝔫 𝔢𝔵𝔞𝔪𝔭𝔩𝔢 𝔞𝔰 𝔴𝔢𝔩𝔩.'))
+print(trans.text_to_unicode('This is an example.'))
+print(trans.text_to_unicode('This is an example as well.', mode=1))
