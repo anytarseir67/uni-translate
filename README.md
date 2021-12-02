@@ -3,7 +3,7 @@ Python library to "translate" a variety of unicode special characters to normal 
 
 can be used as a command line util for strings and text files, or as a library for easier and more flexible integration
 
-(command line use)
+<br/>
 
 # Lib Examples:
 ## examples can be found in the /examples directory
@@ -40,3 +40,9 @@ can be used as a command line util for strings and text files, or as a library f
 * * ### [staticmethod] clean_key -> Tuple[str]:
 * * * ### returns the key cleaned of "normal" characters and duplicates, and its respective alphabet value
 * * * ### [arg] (str) key - key to be cleaned
+
+<br/>
+
+# Command line:
+* ### `uni-translate -t #unicode here`
+* ### paths to text files can be passed aswell, if nothing is passed the user will be prompted
