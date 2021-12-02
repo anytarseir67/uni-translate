@@ -30,6 +30,12 @@ can be used as a command line util for strings and text files, or as a library f
 
 <br/>
 
+* * ### [method] text_to_unicode -> str:
+* * * ### [arg] (str) text: text to be translated
+* * * ### [kwarg] (int) mode: translation mode to use, this should correspond to an index in the key
+
+<br/>
+
 * * ### [staticmethod] _trans -> str:
 * * * ### method to translate text via the given table
 * * * ### [arg] (str) text: text to be translated
