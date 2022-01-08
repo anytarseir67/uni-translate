@@ -4,7 +4,7 @@ HERE = pathlib.Path(__file__).parent
 README = (HERE / "README.md").read_text()
 
 setup(name='uni-translate',
-    version='0.0.4',
+    version='0.0.5',
     description='Python library to "translate" a variety of unicode special characters to normal text',
     long_description=README,
     long_description_content_type="text/markdown",
