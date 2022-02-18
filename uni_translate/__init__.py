@@ -90,13 +90,13 @@ class translator:
         return translator._trans(text, self.rtables[mode])
 
     @staticmethod
-    def _trans(text: str, table: Union[dict, Union[List[str], Tuple[str]]]) -> str:
+    def _trans(text: str, table: Union[dict, Union[List[str], Tuple[str, str]]]) -> str:
             if isinstance(table, (list, tuple)):
                 table = str.maketrans(table[0], table[1])
             return text.translate(table)
 
     @staticmethod
-    def clean_key(key: str) -> Tuple[str]:
+    def clean_key(key: str) -> Tuple[str, str]:
         alphabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
         cleaned_chars = ""
         cleaned_alph = ""

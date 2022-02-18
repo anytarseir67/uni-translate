@@ -9,6 +9,7 @@ def main() -> None:
             text = None
     if text == None:
         text = input('text to translate? ')
+    text = text or "" # to appease mypy
     if os.path.exists(os.path.dirname(text)):
         with open(text, 'rt', encoding='utf-8') as f:
             text = f.read()
